@@ -16,7 +16,7 @@ SCALER_FILE = "scaler.pkl"
 FIREBASE_KEY = "key.json"  # Ensure you uploaded this file!
 
 # !!! PASTE YOUR GOOGLE GEMINI API KEY HERE !!!
-GOOG_API_KEY = "AIzaSyA4j5xl1lkGEKx3LTTYsTJMCs9q6FNpDkE"
+GOOG_API_KEY = "Your_API_Key"
 
 # --- 2. SETUP FIREBASE ---
 # We use a "Try/Except" block to prevent errors when Streamlit reloads
@@ -24,8 +24,8 @@ if not firebase_admin._apps:
     try:
         cred = credentials.Certificate(FIREBASE_KEY)
         firebase_admin.initialize_app(cred, {
-            'databaseURL': 'https://aipay-61b05-default-rtdb.asia-southeast1.firebasedatabase.app/'
-            # ^^^ IMPORTANT: REPLACE THIS URL WITH YOUR OWN FIREBASE URL IF IT FAILS ^^^
+            'databaseURL': 'Your_Database_Link'
+            # IMPORTANT: REPLACE THIS URL WITH YOUR OWN FIREBASE URL IF IT FAILS
         })
         st.toast("🔥 Firebase Connected!", icon="☁️")
     except Exception as e:
