@@ -109,7 +109,7 @@ if btn:
             if gemini_active:
                 with st.spinner("Analyzing context..."):
                     try:
-                        prompt = f"Act as a security bot. A user spent RM {amount} at hour {hour}. Location: {lat}, {lon}. Risk Score: {error_score:.2f}. Explain professionally in English why this is blocked in 1 sentence."
+                        prompt = f"You're a friendly Malaysian security bot. Transaction: RM{amount} at {hour}:00, location {lat},{lon}. Risk score {error_score:.2f}. Explain in 1 casual sentence why this is blocked, using Malaysian slang like 'lah', 'lor', 'wei'. Be protective but friendly."
                         response = model_gemini.generate_content(prompt)
                         st.info(response.text)
                     except: st.error("AI Busy.")
