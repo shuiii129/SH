@@ -51,6 +51,7 @@ Frontend- Streamlit and Google Maps
 SDG 8 Decent Work and Economic Growth 
 Target 8.10: Strengthen the capacity of domestic financial institutions to encourage and expand access to banking for all.
 
+
 SDG 10 Reduced Inequalities
 Target 10.2: Empower and promote the social, economic and political inclusion of all. We bridge the technology gap for non-technical users.
 
